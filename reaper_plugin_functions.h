@@ -4838,12 +4838,12 @@ REAPERAPI_DEF //==============================================
   void (*screenset_register)(char* id, void* callbackFunc, void* param);
 #endif
 
-#if defined(REAPERAPI_WANT_screenset_registerNew) || !defined(REAPERAPI_MINIMAL)
+/*#if defined(REAPERAPI_WANT_screenset_registerNew) || !defined(REAPERAPI_MINIMAL)
 REAPERAPI_DEF //==============================================
 // screenset_registerNew
 
   void (*screenset_registerNew)(char* id, screensetNewCallbackFunc callbackFunc, void* param);
-#endif
+#endif*/
 
 #if defined(REAPERAPI_WANT_screenset_unregister) || !defined(REAPERAPI_MINIMAL)
 REAPERAPI_DEF //==============================================
@@ -7713,9 +7713,9 @@ REAPERAPI_DEF //==============================================
       #if defined(REAPERAPI_WANT_LICE_DrawText) || !defined(REAPERAPI_MINIMAL)
         {(void**)&LICE_DrawText,"LICE_DrawText"},
       #endif
-      #if defined(REAPERAPI_WANT_LICE_FillCBezier) || !defined(REAPERAPI_MINIMAL)
-        {(void**)&LICE_FillCBezier,"LICE_FillCBezier"},
-      #endif
+      // #if defined(REAPERAPI_WANT_LICE_FillCBezier) || !defined(REAPERAPI_MINIMAL)
+      //   {(void**)&LICE_FillCBezier,"LICE_FillCBezier"},
+      // #endif
       #if defined(REAPERAPI_WANT_LICE_FillCircle) || !defined(REAPERAPI_MINIMAL)
         {(void**)&LICE_FillCircle,"LICE_FillCircle"},
       #endif
@@ -8163,9 +8163,9 @@ REAPERAPI_DEF //==============================================
       #if defined(REAPERAPI_WANT_screenset_register) || !defined(REAPERAPI_MINIMAL)
         {(void**)&screenset_register,"screenset_register"},
       #endif
-      #if defined(REAPERAPI_WANT_screenset_registerNew) || !defined(REAPERAPI_MINIMAL)
-        {(void**)&screenset_registerNew,"screenset_registerNew"},
-      #endif
+      // #if defined(REAPERAPI_WANT_screenset_registerNew) || !defined(REAPERAPI_MINIMAL)
+      //   {(void**)&screenset_registerNew,"screenset_registerNew"},
+      // #endif
       #if defined(REAPERAPI_WANT_screenset_unregister) || !defined(REAPERAPI_MINIMAL)
         {(void**)&screenset_unregister,"screenset_unregister"},
       #endif
